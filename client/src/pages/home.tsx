@@ -797,7 +797,6 @@ Message: ${formData.message}`);
                         handleInputChange("email", e.target.value)
                       }
                       placeholder="your.email@example.com"
-                      required
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent"
                     />
                   </div>
@@ -813,6 +812,7 @@ Message: ${formData.message}`);
                       id="phone"
                       type="tel"
                       value={formData.phone}
+                      required
                       onChange={(e) =>
                         handleInputChange("phone", e.target.value)
                       }
